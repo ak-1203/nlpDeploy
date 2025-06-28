@@ -2,7 +2,6 @@
 
 This project is a sentiment analysis web application that classifies movie reviews as either **positive** or **negative** using a deep learning model built with TensorFlow. It provides both a browser-based interface and a REST API for interacting with the model. The model was trained on the IMDb dataset and deployed using Flask.
 
-Live Demo: *[Add your Render link here]*
 
 ---
 
