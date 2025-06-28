@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>&#x1F3AC; Movie Review Sentiment Analyzer</h1>
+        <form method="post" action="/predict">
+            <textarea name="review" placeholder="Write your movie review here..." required></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                <h3>Prediction:</h3>
+                <p><strong>{{ prediction }}</strong></p>
+                <p><em>"{{ original_text }}"</em></p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
